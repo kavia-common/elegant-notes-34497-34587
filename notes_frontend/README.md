@@ -1,49 +1,28 @@
-# lightningjs
+# Ocean Notes - LightningJS (Blits)
 
-### lightningjs
+A modern, minimalist Notes app UI built with LightningJS (Blits) using the Ocean Professional theme.
 
+Features:
+- Header with primary accent
+- Left sidebar: searchable note list, selection highlighting
+- Right pane: note editor (title + body) with Save/Delete
+- In-memory state with localStorage persistence
+- Keyboard navigation: Up/Down to move, Enter to select, Delete/Backspace to delete, Tab to switch editor focus
+- Subtle shadows, rounded corners, and smooth transitions
 
-Welcome to the _lightningjs_ Lightning 3 Blits App!
+Run:
+- npm install
+- npm run dev
+App runs on port 3000 in this container.
 
-### Getting started
+Theme:
+- primary: #2563EB
+- secondary/success: #F59E0B
+- error: #EF4444
+- background: #f9fafb
+- surface: #ffffff
+- text: #111827
 
-Follow the steps below to get your Lightning 3 Blits App up and running in no time.
-
-#### IDE setup
-
-It is highly recommended to install the Blits [VS-code extension](https://marketplace.visualstudio.com/items?itemName=LightningJS.lightning-blits) which will give you template highlighting and improved autocompletion.
-
-#### Project setup
-
-Run the following command to install the dependencies of your App:
-
-```sh
-npm install
-```
-
-#### Build and run in development mode
-
-Run your App in development mode:
-
-```sh
-npm run dev
-```
-
-This command uses Vite to fire up a local server, with Hot Reloading support. Visit the provided link in your web browser to see the App in action.
-
-#### Build the App for production
-
-Create an optimized and minified version of your App:
-
-```sh
-npm run build
-```
-
-This will create a production version of the app in the `dist` folder.
-
-
-### Resources
-
-- [Blits documentation](https://lightningjs.io/v3-docs/blits/getting_started/intro.html) - official documentation
-- [Blits Example App](https://blits-demo.lightningjs.io/?source=true) - a great reference to learn by example
-- [Blits Components](https://lightningjs.io/blits-components.html) - off-the-shelf, basic and performant reference components
+Notes:
+- This UI uses simple keystroke capture for editing; no DOM textareas are used, consistent with Lightning/Blits.
+- Storage is local-only; a backend integration can replace the persistence layer later (see TODOs in code).
